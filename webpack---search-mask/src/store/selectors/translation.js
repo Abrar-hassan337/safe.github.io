@@ -1,0 +1,1 @@
+export const languagesSelector = (state) => state.translation.strings;

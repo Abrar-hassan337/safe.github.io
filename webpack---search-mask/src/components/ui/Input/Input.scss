@@ -1,0 +1,58 @@
+.inputWrapper {
+  position: relative;
+
+  input {
+    height: 44px;
+  }
+
+  &::before {
+    display: none;
+  }
+
+  &.hasIcon {
+    input {
+      padding-left: 32px;
+    }
+  }
+
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: var(--smhc-grayscale-70-color);
+
+    img {
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  &.iconRight {
+    input {
+      padding-left: 12px;
+      padding-right: 32px;
+    }
+
+    .icon {
+      left: auto;
+      right: 5px;
+    }
+  }
+}
+
+.tooltipArrow {
+  &:after {
+    top: 100%;
+    left: 50%;
+    border: 10px solid transparent;
+    margin-left: -10px;
+    border-top-color: var(--smhc-grayscale-90-color);
+    content: ' ';
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    z-index: 9999;
+  }
+}

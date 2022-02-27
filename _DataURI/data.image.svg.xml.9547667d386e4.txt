@@ -1,0 +1,1 @@
+data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000'%3E%3Cpath d='M500 83.3A416.7 416.7 0 1 0 916.7 500 416.7 416.7 0 0 0 500 83.3Z' fill='rgba(115,215,0,0.99)'/%3E%3C/svg%3E

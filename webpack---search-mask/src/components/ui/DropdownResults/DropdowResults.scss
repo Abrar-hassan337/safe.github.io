@@ -1,0 +1,43 @@
+@import '~@flixbus/honeycomb/assets/scss/honeycomb-tools.scss';
+
+// HACK: This is a hack to reset left value coming from parent component
+// src/containers/TripLocationWrapper/TripLocationWrapper.scss
+// .locationWrapperArrival i
+.resetLeft,
+.resetLeft i {
+  left: 0 !important;
+}
+
+.removeIcon {
+  cursor: pointer;
+  border: 0;
+  background: none;
+}
+
+.continent {
+  color: cssvar(grayscale-90-color, 'smhc-');
+  line-height: 36px;
+  height: 36px;
+  background-color: cssvar(grayscale-10-color, 'smhc-');
+  padding: 0 cssvar(spacing-xxs, 'smhc-');
+  font-weight: cssvar(font-weight-bold, 'smhc-');
+  border-bottom: 1px solid cssvar(grayscale-30-color, 'smhc-');
+}
+
+.dropdownList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &:first-child {
+    border-top: 1px solid cssvar(grayscale-30-color, 'smhc-');
+  }
+}
+
+@media (max-width: 599px) {
+  .dropdownList {
+    height: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+}

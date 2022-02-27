@@ -1,0 +1,75 @@
+@import '~@flixbus/honeycomb/assets/scss/honeycomb-tools.scss';
+
+.dropdown {
+  ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 6px;
+  }
+  ::-webkit-scrollbar-thumb {
+    width: 4px;
+    border-radius: 3px;
+    background-color: rgba(124, 124, 124, 0.5);
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+    &:hover {
+      background-color: rgba(10, 10, 10, 0.5);
+    }
+  }
+}
+
+.dropdownWrapper {
+  border: 1px solid var(--smhc-grayscale-30-color);
+}
+
+.errorMessage {
+  padding: 20px 14px;
+}
+
+.fullScreenInputContainer {
+  background-color: var(--smhc-primary-bg-color);
+  width: 100%;
+  padding: 15px;
+  display: none;
+  border-radius: 5px;
+  max-height: 300px;
+}
+
+@media (max-width: 599px) {
+  .dropdownWrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .fullScreenInputContainer {
+    display: block;
+  }
+}
+
+@media (min-width: 600px) {
+  .dropdownWrapper {
+    background-color: var(--smhc-primary-bg-color);
+    padding: 0;
+    display: none;
+    border-radius: 5px;
+    max-height: 370px;
+    overflow-y: auto;
+
+    &.breakMedium {
+      width: 100%;
+    }
+    &.breakLarge {
+      min-width: 400px;
+    }
+  }
+
+  .dropdownWrapperOpen {
+    display: block;
+  }
+
+  .fullScreenInputContainer {
+    position: relative;
+    margin-top: 0;
+    background-color: transparent;
+    padding: 15px;
+  }
+}

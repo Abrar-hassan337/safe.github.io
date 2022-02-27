@@ -1,0 +1,19 @@
+#search-mask-component {
+    width: 100%;
+}
+
+.platform-shop #search-mask-component {
+    background: #ffffff;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+#hero {
+    padding: 100px 0;
+}
+
+@media (max-width: 1199px) {
+    #search-mask-component {
+        width: 100%;
+        background: #ffffff;
+    }
+}

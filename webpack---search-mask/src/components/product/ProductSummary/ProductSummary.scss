@@ -1,0 +1,10 @@
+@import '~@flixbus/honeycomb/assets/scss/honeycomb-tools.scss';
+
+.input {
+  // overflow:      hidden;
+  text-overflow: ellipsis;
+}
+
+.tooltip {
+  margin-top: cssvar(spacing-xs, 'smhc-');
+}

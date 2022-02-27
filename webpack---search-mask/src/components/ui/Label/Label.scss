@@ -1,0 +1,58 @@
+.label {
+  display: flex !important;
+  white-space: nowrap;
+  max-width: 100%;
+
+  i {
+    font-size: 22px;
+    vertical-align: bottom;
+
+    &::before {
+      margin: 0;
+    }
+  }
+
+  span {
+    line-height: 22px;
+    height: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 1199px) {
+  .label {
+    top: -8px;
+
+    i {
+      display: none;
+    }
+
+    span {
+      margin-left: inherit;
+      line-height: inherit;
+      height: inherit;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .label {
+    padding-bottom: 4px;
+
+    span {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      display: inline-block;
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .hideOnSmallScreens {
+    display: none !important;
+  }
+}

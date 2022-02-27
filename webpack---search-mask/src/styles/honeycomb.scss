@@ -1,0 +1,27 @@
+$font-base-path: '../../node_modules/@flixbus/honeycomb/assets/';
+$config-prefix: 'smhc-' !default;
+@import '@flixbus/honeycomb/assets/scss/themes/all';
+@import '@flixbus/honeycomb/assets/scss/config/all';
+@import '@flixbus/honeycomb/assets/scss/utils/all';
+@import '@flixbus/honeycomb/assets/scss/base/all';
+@import '@flixbus/honeycomb/assets/scss/components/_input';
+@import '@flixbus/honeycomb/assets/scss/icons/icons';
+@import '@flixbus/honeycomb/assets/scss/components/_radio';
+@import '@flixbus/honeycomb/assets/scss/components/_button';
+@import '@flixbus/honeycomb/assets/scss/components/_link';
+@import '@flixbus/honeycomb/assets/scss/components/_button-arrow';
+@import '@flixbus/honeycomb/assets/scss/components/_form-control';
+@import '@flixbus/honeycomb/assets/scss/components/_tooltip';
+
+// overwrite honeycomb styles
+.smhc-control {
+  margin: 0;
+}
+
+body {
+  color: cssvar(primary-content-color);
+  font-family: cssvar(font-family-primary);
+  font-size: cssvar(font-size-primary);
+  font-weight: cssvar(font-weight-normal);
+  line-height: cssvar(line-height-primary);
+}

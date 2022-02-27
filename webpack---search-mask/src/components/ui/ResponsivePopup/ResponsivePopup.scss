@@ -1,0 +1,170 @@
+.responsivePopupContainer {
+  width: 100%;
+  position: relative;
+  opacity: 0;
+  pointer-events: none;
+
+  .closeIcon {
+    &::before {
+      margin: 0;
+    }
+  }
+
+  &.responsivePopupContainerVisible {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  &.responsivePopupContainerMedium,
+  &.responsivePopupContainerLarge {
+    top: 4px;
+
+    &.centerAligned {
+      display: flex;
+      display: -ms-flexbox;
+      justify-content: center;
+      -ms-flex-pack: justify;
+    }
+
+    .responsivePopup {
+      position: absolute;
+      top: 0;
+    }
+
+    .responsivePopupWrapper {
+      position: relative;
+    }
+  }
+
+  &.responsivePopupContainerMediumNotFlex {
+    display: initial;
+  }
+
+  .responsivePopup {
+    width: 100%;
+    z-index: 1002;
+
+    .responsivePopupHeader,
+    .responsivePopupFooter {
+      display: none;
+    }
+
+    .responsivePopupWrapper {
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(0, 0, 0, 0.07);
+      background: var(--smhc-primary-bg-color);
+      border-radius: 3px;
+      z-index: 2000;
+      position: relative;
+      top: 0;
+      height: 100%;
+    }
+  }
+
+  .responsivePopupHeaderCloseIcon {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    right: 0;
+    top: 0;
+
+    img {
+      width: 13px;
+      height: 13px;
+    }
+
+    .icon {
+      cursor: pointer;
+      font-size: 18px;
+      padding: 5px;
+    }
+  }
+
+  &.responsivePopupContainerSmall {
+    .responsivePopup {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      padding-top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #ffffff;
+      z-index: 2000;
+      border: 0;
+
+      &.responsivePopupSmallWithButton {
+        height: 100% !important;
+        bottom: initial !important;
+        padding-bottom: 60px;
+        max-height: 100vh;
+        /* mobile viewport bug fix */
+        max-height: -webkit-fill-available;
+      }
+
+      .responsivePopupHeader {
+        position: fixed;
+        width: 100%;
+        display: block;
+        height: 60px;
+        background: #ffffff;
+        line-height: 60px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        box-shadow: 0 1px 15px rgba(0, 0, 0, 0.15);
+        z-index: 2001;
+      }
+
+      .responsivePopupWrapper {
+        display: flex;
+        margin-top: 60px;
+        overflow-y: auto;
+        box-shadow: none !important;
+        -webkit-overflow-scrolling: touch;
+        flex: 1;
+      }
+
+      .responsivePopupFooter {
+        display: flex;
+        align-items: center;
+        height: 60px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: #ffffff;
+        text-align: center;
+        font-weight: bold;
+        box-shadow: 0 -1px 15px rgba(0, 0, 0, 0.15);
+        z-index: 2001;
+        padding: 0 15px;
+
+        button {
+          font: inherit;
+          line-height: normal;
+        }
+      }
+    }
+  }
+
+  &.responsivePopupContainerHideBorder .responsivePopupWrapper {
+    box-shadow: none;
+    border: 0;
+  }
+
+  &.responsivePopupContainerAutoWidth {
+    & .responsivePopup,
+    & .responsivePopupWrapper {
+      width: auto;
+      height: auto;
+    }
+  }
+
+  &.responsivePopupContainerNoPadding {
+    .responsivePopupWrapper {
+      margin: 0;
+    }
+  }
+}

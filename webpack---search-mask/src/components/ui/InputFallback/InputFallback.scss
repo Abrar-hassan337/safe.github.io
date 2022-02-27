@@ -1,0 +1,45 @@
+.fallback {
+  span {
+    margin-left: 0;
+  }
+
+  -webkit-animation: flick 1s ease-in-out infinite;
+  -moz-animation: flick 1s ease-in-out infinite;
+  animation: flick 1s ease-in-out infinite;
+
+  @-moz-keyframes flick {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes flick {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes flick {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

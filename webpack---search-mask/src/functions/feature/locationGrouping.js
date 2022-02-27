@@ -1,0 +1,1 @@
+export const FEATURE_LOCATION_GROUP_BY_CONTINENT = 'continent';

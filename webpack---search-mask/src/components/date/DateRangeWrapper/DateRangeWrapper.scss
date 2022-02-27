@@ -1,0 +1,26 @@
+.dateRangeWrapper {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+@media screen and (min-width: 600px) {
+  .dateRangeWrapper {
+    width: 50%;
+    padding-left: 0;
+    padding-right: 7.5px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .dateRangeWrapper.nonCompact {
+    width: 25%;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+  }
+}

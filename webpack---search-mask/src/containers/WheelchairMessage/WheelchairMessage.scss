@@ -1,0 +1,14 @@
+@import '~@flixbus/honeycomb/assets/scss/honeycomb-tools.scss';
+
+.wheelchairMessagePopup {
+  padding: cssvar(spacing-xxs, 'smhc-') 0 15px;
+
+  a {
+    color: cssvar(link-color, 'smhc-');
+    text-decoration: none;
+  }
+
+  &.hidden {
+    display: none;
+  }
+}

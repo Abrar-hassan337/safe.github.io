@@ -1,0 +1,14 @@
+.wrapper {
+  margin-bottom: 6px;
+  display: block;
+  width: 100%;
+}
+
+.item {
+  display: inline-block;
+  margin: 0px 24px 6px 0;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

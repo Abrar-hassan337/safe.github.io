@@ -1,0 +1,79 @@
+@import '~@flixbus/honeycomb/assets/scss/honeycomb-tools.scss';
+
+.optionWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: cssvar(spacing-xxs, 'smhc-');
+}
+
+.cityOutsideNetwork {
+  padding-bottom: 10px;
+}
+
+.cityInNetwork + .cityOutsideNetwork {
+  border-top: 12px solid var(--smhc-grayscale-10-color);
+  margin-top: 5px;
+  padding-top: 5px;
+}
+
+.inputContainer {
+  padding: 15px;
+}
+
+.suggestionLabel {
+  padding: 10px 15px 5px;
+  font-weight: bold;
+
+  .suggestionLabelMessage {
+    display: inline-block;
+  }
+
+  .alternatives {
+    color: var(--smhc-grayscale-90-color);
+  }
+}
+
+.button {
+  flex: 1;
+  display: flex;
+  font-family: inherit;
+  align-items: center;
+  background: transparent;
+  text-align: left;
+  border: 0;
+  width: 100%;
+  outline: 0 !important;
+  cursor: pointer;
+  color: inherit;
+
+  .optionLabel {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 100px;
+    font-size: 16px;
+    font-stretch: condensed;
+
+    .cityName {
+      display: inline-block;
+    }
+
+    .additionalInfo {
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 100;
+      color: var(--smhc-grayscale-90-color);
+    }
+  }
+}
+
+.optionHover {
+  color: var(--smhc-grayscale-100-color);
+  border-left: 4px solid var(--smhc-secondary-ui-olor);
+  padding-left: 11px;
+}
+
+.buttonSelected {
+  background-color: var(--smhc-grayscale-10-color);
+}

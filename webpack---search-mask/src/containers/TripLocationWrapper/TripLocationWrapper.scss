@@ -1,0 +1,128 @@
+.locationWrapper {
+  box-sizing: border-box;
+  width: 100%;
+  padding-right: 0px;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  margin-bottom: var(--smhc-spacing-xs);
+  position: relative;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+
+  .locationWrapperSwitcher {
+    position: relative;
+  }
+
+  .VirtualSelectGrid {
+    z-index: 1;
+  }
+
+  .VirtualizedSelectOption {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 0.5rem;
+  }
+
+  .VirtualizedSelectFocusedOption {
+    background-color: rgba(0, 126, 255, 0.1);
+  }
+
+  .VirtualizedSelectDisabledOption {
+    opacity: 0.5;
+  }
+
+  .VirtualizedSelectSelectedOption {
+    font-weight: bold;
+  }
+
+  .locationWrapperDeparture,
+  .locationWrapperArrival {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: var(--smhc-spacing-xs);
+
+    input {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      outline: none;
+    }
+  }
+
+  .locationWrapperArrival {
+    margin-bottom: 0;
+
+    input {
+      padding-right: 5px;
+    }
+  }
+
+  .locationWrapperDeparture {
+    input {
+      padding-right: 40px;
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+    &.locationWrapper {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    .locationWrapperDeparture,
+    .locationWrapperArrival {
+      width: 50%;
+      margin-bottom: 0;
+      padding: 0;
+    }
+
+    .locationWrapperDeparture input {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .locationWrapperArrival input {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-left: 0;
+      padding-left: 46px !important;
+    }
+
+    // affects the styling in following component(s)
+    // src/components/ui/Dropdown/Dropdown.scss
+    .locationWrapperArrival i {
+      position: relative;
+      left: 14px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:not(.compact) {
+      &.locationWrapper {
+        margin-bottom: 0;
+        margin-right: 7px;
+        width: 41%;
+      }
+
+      .locationWrapperDeparture,
+      .locationWrapperArrival {
+        width: 50%;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

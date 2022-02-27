@@ -1,0 +1,1 @@
+export const getVersion = () => process.env.SEARCH_APP_VERSION;

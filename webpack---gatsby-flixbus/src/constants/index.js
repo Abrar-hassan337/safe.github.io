@@ -1,0 +1,5 @@
+export const BASE_CDN_URL = "https://cdn-cf.cms.flixbus.com/drupal-assets"
+export const DEFAULT_LANGCODE = "en-gl"
+export const DEFAULT_FLIX_DOMAIN = "https://www.flix.com"
+export const DEFAULT_TRAIN_DOMAIN = "https://www.flixtrain.com"
+export const DEFAULT_BUS_DOMAIN = "https://global.flixbus.com"

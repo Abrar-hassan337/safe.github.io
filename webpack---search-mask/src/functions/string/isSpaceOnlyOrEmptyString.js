@@ -1,0 +1,1 @@
+export const isSpaceOnlyOrEmptyString = (str) => /(^\s*$|^(%20)+$)/.test(str);

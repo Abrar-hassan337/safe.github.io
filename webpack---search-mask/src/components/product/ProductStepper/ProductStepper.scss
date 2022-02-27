@@ -1,0 +1,55 @@
+.productStepper {
+  min-height: 44px;
+  line-height: 22px;
+  margin: 0;
+  padding: 15px 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--smhc-grayscale-30-color);
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.productStepperInfo {
+  flex-grow: 1;
+
+  .productStepperTitle {
+    font-weight: bold;
+  }
+}
+
+.productStepperStepper {
+  display: flex;
+  text-align: center;
+  width: 113px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  margin-right: -9px;
+
+  > div {
+    width: 50px;
+    flex-shrink: 0;
+    flex-grow: 0;
+
+    input {
+      text-align: center;
+      text-indent: 0;
+      font-weight: bold;
+    }
+  }
+
+  button,
+  button i,
+  button i::before {
+    text-align: center;
+    color: var(--smhc-grayscale-100-color);
+  }
+
+  button:disabled {
+    visibility: hidden;
+  }
+}

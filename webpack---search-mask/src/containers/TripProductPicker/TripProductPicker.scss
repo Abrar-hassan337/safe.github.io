@@ -1,0 +1,33 @@
+.productPicker {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: var(--smhc-spacing-xs);
+  padding-left: 0px;
+  padding-right: 0px;
+
+  label {
+    text-transform: capitalize;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .productPicker {
+    width: 25%;
+    margin-bottom: 15px;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .productPicker {
+    margin-bottom: 0;
+  }
+
+  .productPicker.nonCompact {
+    width: 16.6667%;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+  }
+}

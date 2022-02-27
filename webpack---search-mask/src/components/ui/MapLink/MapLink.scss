@@ -1,0 +1,26 @@
+@import '~@flixbus/honeycomb/assets/scss/honeycomb-tools.scss';
+
+.mapLink {
+  background: cssvar(grayscale-10-color, 'smhc-');
+  padding: cssvar(spacing-xxs, 'smhc-');
+  margin: cssvar(spacing-xs, 'smhc-');
+  border-radius: cssvar(spacing-xxxs, 'smhc-');
+  display: flex;
+  text-decoration: none;
+  color: currentColor;
+}
+
+.title {
+  margin: 0;
+}
+
+.imageWrapper {
+  width: 42px;
+  height: 42px;
+  margin-right: cssvar(spacing-xs, 'smhc-');
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+}

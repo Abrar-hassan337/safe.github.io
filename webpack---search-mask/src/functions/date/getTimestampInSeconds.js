@@ -1,0 +1,1 @@
+export const getTimestampInSeconds = (date) => Math.floor(date.getTime() / 1000);
